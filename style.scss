@@ -1,0 +1,32 @@
+// Le Sass
+// On utilise bien Scss
+
+// On doit compiler le code avec la commande
+// sass --watch style.scss style.css
+
+// On peut créer des variables
+$color: blue;
+$padding: 25px - 10px;
+
+body {
+    background-color: $color;
+}
+
+// On peut créer une hiérarchie, le "Nesting"
+nav {
+    ul {
+        padding: 0;
+    }
+
+    a {
+        color: red;
+
+        &:hover {
+            color: yellow;
+        }
+    }
+}
+
+// On peut séparer notre code Scss à travers plusieurs fichiers
+// _ devant le nom permet juste de savoir que c'est un morceau
+@import 'scss/navbar';
